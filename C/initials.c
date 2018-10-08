@@ -1,3 +1,11 @@
+/*
+
+    Given a name in a string, display its initials.
+    INPUT : "Welcome To Apple"
+    OUTPUT : "WTA"
+
+*/
+
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
