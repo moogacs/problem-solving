@@ -1,4 +1,4 @@
-# Problems and it's solutions.
+# Problems and it's solutions.   <img src="https://m-mooga.com/rubix_cube.jpg" width="50">
 
 ## Problem solving, a great Speed comes with a good Accuracy. The more Accurate you can write code, the more Speed you will gain.
 
