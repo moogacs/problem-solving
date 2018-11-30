@@ -14,7 +14,7 @@ GCD(m, n) : 3
 
 // gcd expects two integers and returns an integer
 const gcd = (a, b) => {
-	if(b) return this.gcd(b, a % b);
+	if(b) return gcd(b, a % b);
 	else return a;
 }
 
