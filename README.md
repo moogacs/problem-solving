@@ -14,6 +14,7 @@ Files are grouped by language for a more organized search:
 * [ColdFusion](/ColdFusion)
 * [Java](/Java)
 * [JavaScript](/JavaScript)
+* [Python](/Python)
 
 
 There are various websites which focus on the skills of problem solving. A few of them, namely, have all the challenges you have been craving for: 
