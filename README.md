@@ -14,6 +14,7 @@ Files are grouped by language for a more organized search:
 * [ColdFusion](/ColdFusion)
 * [Java](/Java)
 * [JavaScript](/JavaScript)
+* [Python](/Python)
 
 
 There are various websites which focus on the skills of problem solving. A few of them, namely, have all the challenges you have been craving for: 
@@ -27,3 +28,7 @@ There are various websites which focus on the skills of problem solving. A few o
 
 
 The best advice when it comes algorithms is grinding continuously - until they seem simpler. 
+
+Before you can get your hands dirty in solving algorithm challenges, you can learn a lot about Data Structures and Algorithms.
+Some good source for learning it :
+* [GeeksForGeeks](https://www.geeksforgeeks.org/)
