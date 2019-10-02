@@ -10,6 +10,7 @@ Make sure you also contribute to this repo by adding different problems and thei
 
 Files are grouped by language for a more organized search:
 
+* [C++](/CPP)
 * [C](/C)
 * [ColdFusion](/ColdFusion)
 * [Java](/Java)
