@@ -3,6 +3,10 @@ It is a simple comparison algorithm where the elements of 2 arrays of equal leng
 The final output will be the same elements in both arrays.
 Considerations: No entry checks are made. 
 Although the data is integer, there is no verification to verify that the data entry is valid.
+Array dimension: 3
+Input Array 1: 1, 3, 4
+Input Array 2: 1, 5, 8
+Output: 1
 
 Español: 
 Es un algoritmo de comparación simple donde los elementos de 2 arrays de igual longitud son comparados por medio de iteración simple. 
@@ -10,6 +14,10 @@ La salida final serán los elementos iguales en ambos arrays.
 
 Consideraciones: No se hace verificaciones de entrada. 
 A pesar de que los datos son enteros no se hace una verificación para comprobar que la entrada de datos sea valida.
+Dimensión de los arrays: 3
+Input Array 1: 1, 3, 4
+Input Array 2: 1, 5, 8
+Output: 1
 */
 
 #include<stdio.h>
