@@ -1,16 +1,30 @@
+/*
+ * Program to generate prime numbers using Sieve Of Eratosthenes.
+ * Input: m n.
+ * Output: all the prime numbers between m and n.
+ * For reference: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes.
+ * This method of generating prime numbers is fast. With time complexity of O(nlog(log sqrt(n))).
+ * Where the naive method will take O(n^2).
+ * 
+ *
+ * For example, questions like find the smallest and largest n-digit prime numbers.
+ * Generate all the numbers from 1 - n using the sieve, and then it becomes really simple to find the
+ * smallest and the largest numbers.
+ * 
+ * With some modifications the time complexity of the seive can be made linear, i.e O(n).
+ * But for most of the time, the implemenation below will be good enough.
+ *
+ * Link to different implementation of the seive with calculation of the time complexity:
+ * https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html
+ * 
+ */
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
 #include<time.h>
 #define true 1 
 #define false 0
-
-/*
- * Program to generate prime numbers using Sieve Of Eratosthenes.
- * Input: m n.
- * Output: all the prime numbers between m and n.
- * For reference: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
- */
 
 void SieveOfEratosthenes(unsigned long long m ,unsigned long long  n){
     char *prime = (char*)malloc(sizeof(char) * (n+1));
