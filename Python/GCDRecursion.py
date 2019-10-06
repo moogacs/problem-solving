@@ -1,10 +1,13 @@
 def gcd(a,b):
     x = min(a,b)
     y = max(a,b)
-    if y%x == 0:
-        return(x)
+    if x==0 or y==0:
+        return(0)
     else:
-        return(gcd(x,y%x))
+        if y%x == 0:
+            return(x)
+        else:
+            return(gcd(x,y%x))
 
 n = int(input("number 1: "))
 m = int(input("number 2: "))
