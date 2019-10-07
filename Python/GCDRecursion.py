@@ -1,3 +1,15 @@
+#GCD implemented using recursion
+#
+#This program implements calculation of GCD using the Euclidean recursive algorithm.
+#Given two positive integers a and b such that a<b, gcd is calculated as follows:
+# If a=0 or b=0, gcd(a,b) = 0
+# Otherwise, gcd(a,b) = gcd(a,b%a)
+#
+#Example:
+#   Input: 15 21
+#   Output: 3
+
+
 def gcd(a,b):
     x = min(a,b)
     y = max(a,b)
