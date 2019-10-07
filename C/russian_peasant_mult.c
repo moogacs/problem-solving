@@ -1,4 +1,13 @@
-//Implementation of the Russian Peasant Multiplication Algorithm
+//Russian Peasant Multiplication Algorithm
+//
+//An implementation of the russian peasant algorithm to multiply two numbers.
+//The program takes two numbers as input and uses multiplication and division by
+//2 to calculate their product.
+//It is a faster way to calculate integer products than repeated addition.
+//
+//Example:
+//	Input : 3 4
+//	Output : 12 
 
 #include<stdio.h>
 long long int multiply(long long int, long long int);
