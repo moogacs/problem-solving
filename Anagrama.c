@@ -1,3 +1,10 @@
+/*This program tests whether a word or phrase is an anagram of another one.
+Sample Input:
+Thats one small step for a man. One giant leap for mankind. Neil Armstrong
+Thin man ran... makes a large stride... left planet... pins flag on moon... on to Mars!
+Sample Output:
+True
+*/
 #include <stdio.h>
 #include <string.h>
 
