@@ -3,7 +3,7 @@
  
 #include<stdio.h>
 
-int factorial(int x);
+int factorial(int fj);
 float power(float fx, int fj);
 
 int main()
