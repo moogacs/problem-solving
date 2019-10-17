@@ -21,8 +21,9 @@ Output: 1
 */
 
 #include<stdio.h>
-int main()
+void main()
 {
+	clrscr();
     int i,j,n;
     printf("enter the number of elements in an arrays\n");
     scanf("%d",&n);
@@ -45,4 +46,5 @@ int main()
 			   }
 		   }
     }
+	getch();
 }
