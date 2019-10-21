@@ -98,15 +98,14 @@ void traverseNode()
 
 void beginNode()
 {
-    node *tmp; int val;
+    node *tmp; 
 
     tmp = (node*)malloc(sizeof(node));
 
     printf("Enter the Value:");
-    scanf("%d", &val);
+    scanf("%d", &tmp->data);
 
     tmp->next = tmp->prev = NULL;
-    tmp->data = val;
 
     if(head == NULL && tail == NULL)
         head = tail = tmp;
