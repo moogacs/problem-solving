@@ -1,3 +1,17 @@
+/* 
+ * This algorithm uses the quicksort algorithm
+ * to sort an array of n elements
+ * best case: O(n log n)
+ * worst case: O(n^2)
+ * average case: O(n log n)
+ */
+
+/* I/O
+ * Numero di elementi: 5 (This is the number of elements)
+ * Inserisci 5 numeri: 4 1 3 0 100
+ * 0 1 3 4 100 (This is the new sorted array)
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #define MAX 300
@@ -15,7 +29,7 @@ int main(void) {
     return(0);
 }
 
-//scambia il valore delle due variabili.
+//Interchange numbers
 void scambia(int *x, int *y) {
     int z;
     z = *x;
@@ -24,12 +38,7 @@ void scambia(int *x, int *y) {
     return;
 }
 
-/*
- * Legge in input il numero n ed n numeri interi
- * che memorizza nell'array. Restituisce il numero
- * di elementi letti (n).
- */
-
+//get input and number of elements
 int leggi_array(int V[]) {
     int n, i;
     printf("Numero di elementi: ");
@@ -40,6 +49,7 @@ int leggi_array(int V[]) {
     return(n);
 }
 
+//print array
 void stampa_array(int V[], int n) {
     int i;
     for (i=0; i<n; i++) {
