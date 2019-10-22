@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <math.h>
+#include <stdio.h>   /*Enter two numbers and find their Greatest Common Divisor*/
+#include <math.h>    /*example: imput: 8 12     output: 4*/
 int gcd(int a,int b)
 {
 	int hcf;
