@@ -1,5 +1,5 @@
-#include <stdio.h>
-int lcm(int a,int b)
+#include <stdio.h>     /*Enter two numbers to find their Lowest Common Multiple*/
+int lcm(int a,int b).  /*example: input: 8 12           output: 24*/
 {
 	int lcm=a*b;
 	int great=(a>b)?a:b;
