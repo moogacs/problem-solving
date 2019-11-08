@@ -1,0 +1,143 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct queue
+{
+    int front,rear;
+    int capacity;
+    int *array;
+};
+struct queue *createQueue(int size)
+{
+    struct queue *q;
+    q=malloc(sizeof(struct queue));
+    q->capacity=size;
+    q->front=q->rear=-1;
+    q->array=malloc(q->capacity*sizeof(int));
+    return q;
+}
+
+void enQueue(struct queue *q)
+{
+    if((q->rear+1)%q->capacity==q->front)
+        printf("\nqueue is full\n");
+    else
+    {
+        int data;
+        printf("enter the value of element");
+        scanf("%d",&data);
+        q->rear=(q->rear+1)%q->capacity;
+        q->array[q->rear]=data;
+        if(q->front ==-1)
+            q->front=q->rear;
+    }
+}
+
+void deQueue(struct queue *q)
+{
+    int data=0;
+    if(q->front==-1 && q->rear==-1)
+       printf("\nqueue is empty\n");
+    else
+    {
+        data=q->array[q->front];
+        if(q->front==q->rear)
+            q->front=q->rear=-1;
+        else
+            q->front=(q->front+1)%q->capacity;
+        printf("\ndeleted element is %d\n",data);
+    }
+}
+
+void deleteQueue(struct queue *q)
+{
+    if(q)
+    {
+        if(q->array)
+            free(q->array);
+    }
+    free(q);
+}
+
+void display(struct queue *q)
+{
+    if(q->front==-1 && q->rear==-1)
+    {
+        printf("\nqueue is empty\n");
+        printf("\n f=%d",q->front);
+        printf("\n r=%d\n",q->rear);
+    }
+    else
+        {
+            int i;
+            if(q->front<q->rear)
+            {
+                for(i=q->front;i<=q->rear;i++)
+                {
+                    printf("\n %d ",q->array[i]);
+                    printf("\n f=%d",q->front);
+                    printf("\n r=%d\n",q->rear);
+                }
+            }
+            else if(q->front==q->rear)
+            {
+                printf("\n %d ",q->array[q->front]);
+                printf("\n f=%d",q->front);
+                printf("\n r=%d\n",q->rear);
+            }
+            else
+            {
+                for(i=q->front;i<q->capacity;i++)
+                {
+                    printf("\n %d ",q->array[i]);
+                    printf("\n f=%d",q->front);
+                    printf("\n r=%d\n",q->rear);
+                }
+                for(i=0;i<=q->rear;i++)
+                {
+                    printf("\n %d ",q->array[i]);
+                    printf("\n f=%d",q->front);
+                    printf("\n r=%d\n",q->rear);
+                }
+            }
+
+        }
+
+}
+
+void main()
+{
+    int size,j;
+    printf("\nenter the size of queue\n");
+    scanf("%d",&size);
+    struct queue *s=createQueue(size);
+     while(j!=0)
+    {
+        printf("\n 1. for inserting \n 2. for deleting \n 3. for displaying \n 4. for deleting queue \n 0. to exit");
+        scanf("%d",&j);
+        switch(j)
+        {
+            case 1:
+                enQueue(s);
+                break;
+            case 2:
+                deQueue(s);
+                break;
+            case 3:
+                display(s);
+                break;
+            case 4:
+                deleteQueue(s);
+                break;
+            case 0:
+                break;
+            default:
+                printf("invalid entry");
+                break;
+
+        }
+    }
+}
+
+
+
+
