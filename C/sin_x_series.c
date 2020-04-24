@@ -1,5 +1,8 @@
 /* Sin x is a series function and can be expanded upto infinite terms.
- Given code is used to find the value Sin x upto the desired limit, using the Taylor's series expansion*/
+ Given code is used to find the value Sin x upto the desired limit, using the Taylor's series expansion
+ Input: X, and number of terms that need to be calculated
+ Output: value of Sin x upto the given limit
+ Example: Input : X=31 deg, terms =3, Output : 0.484*/
  
 #include<stdio.h>
 
